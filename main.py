@@ -73,7 +73,7 @@ def main():
         caption = f"{formatted_date} 증권사 리포트 요약"
         telegram.send_multiple_photo(image_paths, caption)
         
-        # API로 이미지 전송
+        # API로 이미지 전송 
         try:
             api_util.create_post(
                 title=caption,
