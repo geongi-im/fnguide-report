@@ -213,7 +213,7 @@ def process_html(html, today):
             <title>{formatted_date} 증권사 리포트 요약</title>
             <style>
                 body {{
-                    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+                    font-family: 'Noto Sans KR', sans-serif;
                     margin: 20px;
                     padding: 0;
                     color: #333;
