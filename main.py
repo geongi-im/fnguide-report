@@ -210,6 +210,7 @@ def process_html(html, today):
         <html>
         <head>
             <meta charset="UTF-8">
+            <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
             <title>{formatted_date} 증권사 리포트 요약</title>
             <style>
                 body {{
