@@ -24,6 +24,16 @@ def main():
     response = requests.get(url)
     html = response.text
     
+    # BeautifulSoup으로 HTML 파싱하여 데이터 유무 확인
+    soup = BeautifulSoup(html, 'html.parser')
+    rows = soup.find_all('tr')
+    
+    # rows가 비어있는 경우 처리
+    if not rows:
+        logger.warning(f"{today} - 리포트 데이터가 없습니다. 프로그램을 종료합니다.")
+        return  # 함수 종료
+    
+    # 데이터가 있는 경우 계속 진행
     # HTML 데이터 가공 및 스타일 추가
     html_pages = process_html(html, today)
 
