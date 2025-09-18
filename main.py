@@ -90,7 +90,8 @@ def main():
                 content="증권사 리포트 요약 데이터",
                 category="증권사리포트",
                 writer="admin",
-                image_paths=image_paths
+                image_paths=image_paths,
+                thumbnail_image_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'thumbnail', 'thumbnail.png')
             )
         except ApiError as e:
             message = f"❌ API 오류 발생\n\n{e.message}"
