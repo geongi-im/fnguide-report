@@ -40,7 +40,7 @@ FnGuide에서 제공하는 증권사 리포트 데이터를 수집하여 이미�
 - `TELEGRAM_BOT_TOKEN`: 텔레그램 봇 토큰
 - `TELEGRAM_CHAT_ID`: 텔레그램 채널 ID
 - `TELEGRAM_CHAT_TEST_ID`: 테스트용 텔레그램 채널 ID
-- `API_BASE_URL`: API 서버 기본 URL
+- `BASE_URL`: 서버 URL
 
 ## 사용 방법
 
